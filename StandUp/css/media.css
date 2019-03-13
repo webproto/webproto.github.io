@@ -1,0 +1,188 @@
+/*
+max-width : 1200px
+max-width : 992px
+max-width : 768px
+max-width : 560px
+max-width : 480px
+max-width : 360px
+*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	/*===================- HEADER  -============================*/
+	/*===================- SECTION 1 -============================*/
+	/*===================- SECTION 2 -============================*/
+	/*===================- SECTION 3 -============================*/
+	/*===================- FOOTER -============================*/
+	footer {
+		padding: 0 20px;
+	}
+
+	.foot-wrapper {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	.foot-flex-offset {
+		display: none;
+	}
+
+	.foot-img {
+		margin-bottom: 300px;
+		margin-left: 50px;
+	}
+
+	.foot-img img {
+		/*left: 1px;*/
+		right: -200px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	/*===================- HEADER  -============================*/
+	/*===================- SECTION 1 -============================*/
+	/*===================- SECTION 2 -============================*/
+	/*===================- SECTION 3 -============================*/
+	/*===================- FOOTER -============================*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	h3:before,
+	h3:after {
+		display: none;
+	}
+
+	/*===================- HEADER  -============================*/
+	/*===================- SECTION 1 -============================*/
+
+	.section1 {
+		padding:0 20px;
+	}
+
+	.slide {
+		top: calc(45% - 22px);
+	}
+
+	/*===================- SECTION 2 -============================*/
+
+	.h3-sec2 {
+		margin-bottom: 50px;
+	}
+
+	.slid-item {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		padding: 0 20px;
+	}
+	/*===================- SECTION 3 -============================*/
+
+	.category-item-wrapper {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	.cat-item-wrap {
+		width: 80%;
+		margin-bottom: 80px;
+	}
+
+	/*===================- FOOTER -============================*/
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px) {
+	/*===================- HEADER  -============================*/
+	/*===================- SECTION 1 -============================*/
+
+	.section1 {
+		height: 500px;
+	}
+
+	.section1 h1 {
+		display: none;
+	}
+
+	.sec1-inner {
+		margin-top: 50px;
+		-ms-align-items: flex-start;
+		align-items: flex-start;
+		/*width: 100%;*/
+		padding: 0 5px;
+	}
+
+	.input-wrap-top {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.input-wrap-top input {
+		margin: 0 0 20px;
+		width: 100%;
+	}
+
+	.input-wrap-bot {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+	.input-wrap-bot p {
+		text-align: right;
+		margin-top: 15px;
+	}
+
+	/*===================- SECTION 2 -============================*/
+	/*===================- SECTION 3 -============================*/
+	/*===================- FOOTER -============================*/
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
+	/*===================- HEADER  -============================*/
+	/*===================- SECTION 1 -============================*/
+
+	.slide {
+		top: calc(35% - 22px);
+	}
+
+	/*===================- SECTION 2 -============================*/
+	/*===================- SECTION 3 -============================*/
+	/*===================- FOOTER -============================*/
+
+	.foot-img img {
+		right: -300px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 360px) {
+	/*===================- HEADER  -============================*/
+	/*===================- SECTION 1 -============================*/
+	/*===================- SECTION 2 -============================*/
+	/*===================- SECTION 3 -============================*/
+	/*===================- FOOTER -============================*/
+}

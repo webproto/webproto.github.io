@@ -1,0 +1,387 @@
+/* Навагация
+slider
+about
+gym
+team
+gallery
+price
+footer
+*/
+
+
+/*============== MAIN ==============*/
+.grow-1 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-grow: 1;
+}
+
+.section {
+	padding: 50px 0;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'PTSans-Narrow';
+}
+
+p,
+h4,
+a {
+	font-family: 'PTSans-Regular';
+}
+
+h2:after {
+	position: relative;
+	display: block;
+	content: " ";
+	width: 100px;
+	height: 3px;
+	background: #FF0000;
+	margin: 10px auto 0;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+	height: 40px;
+	width: 40px;
+}
+
+.hidden {
+	display: none;
+}
+
+/*============== HEADER ==============*/
+
+header {
+	background: #202020;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.navbar a {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	/*flex-grow: 1;*/
+	color: #fff;
+
+}
+
+.tel {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	margin-left: 35px;
+}
+
+.tel a {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.ion-ios-telephone {
+
+}
+
+.navbar-nav li {
+
+}
+
+.navbar-nav a {
+	color: #ccc;
+	padding: 15px 20px !important;
+}
+
+.navbar-nav a:hover {
+	color: #fff !important;
+	background: #FF0000;
+}
+
+.nav-link_active {
+	color: #fff !important;
+	/*background: #c40017;*/
+}
+
+.navbar-collapse {
+	flex-grow: -0px;
+	justify-content: flex-end;
+}
+
+.navbar-brand {
+	font-family: "Raleway";
+	font-weight: bolder;
+	font-size: 24px;
+	/*color: #fff;*/
+	padding: 0;
+	margin: 0;
+
+}
+
+.ion-drag {
+	color: #fff;
+	/*font-size: 30px;*/
+}
+
+.navbar-toggler {
+	border: 1px solid #fff !important;
+	cursor: pointer;
+}
+
+.navbar-toggler:focus {
+	outline: none;
+}
+
+/*============== SLIDER ==============*/
+
+.section.slider {
+	padding: 0;
+}
+
+.carousel-item img {
+	/*max-height: 700px;*/
+}
+
+.carousel-inner {
+	
+}
+
+/*============== ABOUT ==============*/
+
+.h3-about:after {
+	position: relative;
+	display: block;
+	content: " ";
+	width: 50px;
+	height: 5px;
+	background: #A67046;
+	margin: 5px 0 40px;	
+}
+
+.p-about_desc {
+	margin: 30px 0 50px;
+	text-align: center;
+}
+
+.about img {
+	-webkit-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	transition: 0.4s ease;
+}
+
+.about img:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*============== GYM ==============*/
+
+.gym {
+	background: #F5F5F5;
+}
+
+.gym .row {
+	/*background: #fff;*/
+}
+
+.gym .row div {
+	margin-bottom: 50px;
+}
+
+.h2-gym {
+	padding: 50px 0;
+}
+
+.h3-gym:after {
+	position: relative;
+	display: block;
+	content: " ";
+	width: 40px;
+	height: 5px;
+	background: #A67046;
+	margin: 5px 0 40px;	
+}
+
+.p-gym_desc {
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*============== TEAM ==============*/
+
+.team {
+	background: #202020;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.team h2 {
+	color: #fff;
+}
+
+.h2-section {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.img-trener {
+	width: 300px;
+	height: 500px;
+}
+
+.vis-480 {
+	display: none;
+}
+
+#btn-info {
+	display: none;
+}
+
+/*============== GALLERY ==============*/
+
+.gallery {
+	padding-bottom: 50px;
+}
+
+.img-gallery {
+	margin: 50px 0 0 0;
+}
+
+/*============== PRICE ==============*/
+
+.price {
+	padding: 50px 0;
+	
+}
+
+.price .container .row {
+	background: #fff;
+	outline: 1px solid #ccc;
+}
+
+.h2-price {
+	margin-top: 30px;
+}
+
+.choice {
+	margin: 35px 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.choice p {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.h4-price {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.p-price_desc,
+.p-price_desc span {
+	transition: .3s ease;
+	
+}
+
+.p-price_desc {
+	font-size: 20px;
+	margin-bottom: 60px;
+}
+
+.p-price_desc span {
+	color: #E25050;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.price-span {
+	position: relative;
+	top: 0px;
+	display: block;
+	margin: 0 10px;
+	font-size: 25px;
+	content: "/";
+}
+
+.choise_active {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #A67046;
+	transition: .03s ease;
+}
+
+/*============== FOOTER ==============*/
+
+footer {
+	padding: 30px 0 50px;
+	background: #202020;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+}
+
+#btn-home {
+	background: #FF0000;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 25px;
+	position: relative;
+	bottom: 50px;
+	left: calc(50% - 50px);
+}
+
+.foot-tel {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
+
+.foot-tel a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.social {
+	margin-top: 20px;
+}
+
+.soc {
+	margin-right: 20px;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>StandUp</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- My Style -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <!-- My JS -->
+  <script src="js/main.js" defer></script>
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+
+     <div class="wrapper">
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="col-md-3 col-md-offset-2">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <!-- <span class="icon-bar"></span> -->
+                  </button>
+                  <a class="navbar-brand" href="#">Название сайта</a>
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav pull-right">
+                    <li><a href="#">Наша миссия</a></li>
+                    <li><a href="#">условия</a></li>
+                    <li><a href="#">Комики</a></li>
+                    <li><a href="#">Контакты</a></li> 
+                  </ul>    
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section1">
+          <div class="container">
+            <div class="row">
+              <div class="sec1-inner">
+                <h1>
+                  У вас унылая тусовка?<br>
+                  закажите комика!
+                </h1>
+                <form action="libs/mail.php" class="form">
+                  <div class="input-wrap input-wrap-top">
+                    <input type="text" placeholder="Имя" name="name">
+                    <input type="text" placeholder="Телефон" name="phone" class="maskphone">
+                  </div>
+                  <div class="input-wrap input-wrap-bot">
+                    <p><input type="checkbox" class="agree" id="agree">Вы согласны на обработку персональных данных</p>
+                    <button class="btn btn-sec1" id="submit" disabled>заказать</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section2">
+          <div class="container-fluid">
+            <div class="row">
+              <h3 class="h3-sec2">Познакомьтесь с нашими участниками</h3>
+              <div class="slider">
+                <div class="owl-carousel">
+                  <div class="slid-item">
+                    <div class="slide-offset"></div>
+                    <div class="slid-img">
+                      <img src="img/slider/1.png" alt="" class="">
+                    </div>
+                    <div class="slid-item-desc">
+                      <h2 class="h2-slid-item-text">Алексей Флеш</h2>
+                      <p class="p-slid-item-lvl">Lvl: 6</p>
+                      <p class="p-slid-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, libero, eaque. Cumque perspiciatis est possimus, fugit, culpa itaque rerum ipsam, doloremque esse ex reiciendis labore debitis et quidem obcaecati fugiat minima quis praesentium accusantium laboriosam numquam. Voluptates ipsa eaque dolore quam quibusdam porro, nihil quaerat temporibus, aliquid quidem quos, necessitatibus.</p>
+                      <a href="">подробнее</a>
+                    </div>
+                    <div class="slide-offset"></div>
+                  </div>
+                </div>
+                <div class="controls">
+                  <div class="arrow" id="left-slide"><i class="glyphicon glyphicon-play slide slide-left"></i></div>
+                  <div class="arrow" id="right-slide"><i class="glyphicon glyphicon-play slide slide-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section3">
+          <div class="container">
+            <div class="row">
+              <h3 class="h3-sec3">почему нужно выбрать именно нас ?</h3>
+              <div class="category-item-wrapper">
+                <div class="cat-item-wrap">
+                  <i class="ic-cat-money"></i>
+                  <h2 class="h2-cat">цены</h2>
+                  <p class="p-desc-cat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, vel quisquam saepe, ad nulla ex tenetur eveniet optio voluptates possimus.</p>
+                </div>
+                <div class="cat-item-wrap">
+                  <i class="ic-cat-team"></i>
+                  <h2 class="h2-cat">команда</h2>
+                  <p class="p-desc-cat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, vel quisquam saepe, ad nulla ex tenetur eveniet optio voluptates possimus.</p>
+                </div>
+                <div class="cat-item-wrap">
+                  <i class="ic-cat-cal"></i>
+                  <h2 class="h2-cat">график</h2>
+                  <p class="p-desc-cat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, vel quisquam saepe, ad nulla ex tenetur eveniet optio voluptates possimus.</p>
+                </div>
+                <div class="cat-item-wrap">
+                  <i class="ic-cat-hum"></i>
+                  <h2 class="h2-cat">юмор</h2>
+                  <p class="p-desc-cat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, vel quisquam saepe, ad nulla ex tenetur eveniet optio voluptates possimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="row">
+           <div class="foot-wrapper">
+            <div class="foot-flex-offset"></div>
+            <div class="foot-wrap">
+              <h2 class="h2-foot">наша миссия</h2>
+              <p class="p-foot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eos aspernatur deserunt temporibus modi illo quas inventore qui debitis, molestiae.</p>
+              <a href="" class="a-foot">подробнее</a>
+              <div class="foot-bot" itemscope itemtype="http://schema.org/Organization">
+               <div itemprop="name">Zebra-StandUp</div>
+               <ul class="ul-foot" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <li  itemprop="telephone"><a href="tel:+71234567890">+7 123 456 78 90</a></li>
+                <li itemprop="streetAddress">г. Ставрополь, ул. Гагарна 20</li>
+              </ul>
+              <div class="clr"></div>
+              <a href="" class="a-foot">Политика конфиденциальности</a>
+            </div>
+          </div>
+          <div class="foot-img">
+            <img src="img/micro.png" alt="Img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/form.js"></script>
+<script src="libs/owl.carousel.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
+</body>
+</html>

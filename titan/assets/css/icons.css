@@ -1,0 +1,77 @@
+i[class*="ic-"] {
+  display: inline-block;
+  background: url(../img/sprite.png);
+  content: " "; }
+
+header i,
+footer i {
+  height: 20px;
+  width: 20px; }
+  header i.ic-location,
+  footer i.ic-location {
+    background-position: -5px -4px;
+    position: relative;
+    top: 1px; }
+  header i.ic-mail,
+  footer i.ic-mail {
+    background-position: -42px -0px; }
+  header i.ic-phone,
+  footer i.ic-phone {
+    background-position: -72px -2px;
+    position: relative;
+    top: 2px; }
+
+i.ic-benefit {
+  display: inline-block;
+  position: relative;
+  bottom: 14px;
+  right: 12px;
+  width: 40px;
+  height: 40px; }
+  i.ic-benefit_shield {
+    background-position: -6px -214px; }
+  i.ic-benefit_armor {
+    background-position: -68px -217px; }
+  i.ic-benefit_thumbUp {
+    background-position: -130px -216px; }
+  i.ic-benefit_hand {
+    background-position: -186px -214px; }
+
+i.ic-about {
+  width: 85px;
+  height: 65px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center; }
+  i.ic-about_hat {
+    background-position: 0px -50px; }
+  i.ic-about_lamp {
+    background-position: -90px -44px; }
+  i.ic-about_hand {
+    background-position: -170px -44px; }
+  i.ic-about_eye {
+    background-position: -253px -44px; }
+  i.ic-about_home {
+    background-position: -347px -46px; }
+  i.ic-about_car {
+    background-position: -8px -120px; }
+  i.ic-about_badge {
+    background-position: -104px -120px; }
+  i.ic-about_magazine {
+    background-position: -181px -120px; }
+  i.ic-about_camera {
+    background-position: -251px -120px;
+    margin-top: 5px; }
+  i.ic-about_tools {
+    background-position: -331px -120px; }
+
+.btn-close {
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+  background: url(../img/close.png);
+  content: " ";
+  background-position: 0px 0px; }
