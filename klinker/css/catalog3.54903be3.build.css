@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* Font Family Start */
+/* Font Family Start */
+/* Font Size Start */
+/* Font Size End */
+/* Base Colors Start */
+/* Base Colors End */
+/* Bootstrap Vars Start */
+/* Переменная для циклов Start */
+/*
+	Пример Вызова:
+	@include font-face("cpw-opensans", "../fonts/OpenSans/OpenSansBold/OpenSansBold", 700);
+*/
+/* Padding Start */
+/* Padding End */
+/* Margin Start */
+/* Margin End */
+.catalog-items--box {
+  margin-left: -8px;
+  margin-right: -8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1.875rem; }
+
+.catalog-items--wrap {
+  width: 20%;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 1.25rem; }
+
+.catalog3--more {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #7D7D7D;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-bottom: 2.5rem; }
+  .catalog3--more:hover {
+    color: #7D7D7D;
+    opacity: 0.7; }
+
+.catalog3-text-wrapper p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: inherit;
+  font-family: "SanFranciscoDisplay";
+  line-height: normal;
+  color: #000;
+  margin-bottom: 15px; }
+  .catalog3-text-wrapper p:last-child {
+    margin-bottom: 0; }
+
+/* Extra large: ≥1200px */
+/* Large: ≥992px */
+/* Medium: ≥768px */
+/* Small: ≥576px */
+/* Extra small: >0 */
+

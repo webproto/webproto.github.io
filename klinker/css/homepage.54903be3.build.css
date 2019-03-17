@@ -94,25 +94,87 @@
         flex-basis: 48%; }
     .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--big a {
       height: 100%; }
+    .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--big .title {
+      font-weight: 400;
+      font-size: 2.25rem;
+      letter-spacing: inherit;
+      font-family: "SanFranciscoDisplay";
+      line-height: normal; }
+    .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--big .desc {
+      font-weight: 400;
+      font-size: 1.125rem;
+      letter-spacing: inherit;
+      font-family: "SanFranciscoDisplay";
+      line-height: normal; }
   .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--medium {
     -ms-flex-preferred-size: 32%;
         flex-basis: 32%; }
     .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--medium a {
       height: 50%; }
+    .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--medium .title {
+      font-weight: 400;
+      font-size: 1.875rem;
+      letter-spacing: inherit;
+      font-family: "SanFranciscoDisplay";
+      line-height: normal; }
+    .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--medium .desc {
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: inherit;
+      font-family: "SanFranciscoDisplay";
+      line-height: normal; }
   .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--small {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%; }
     .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--small a {
       height: 33.33333%; }
+    .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--small .title {
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: inherit;
+      font-family: "SanFranciscoDisplay";
+      line-height: normal; }
+    .homepage-gallery-wrap .homepage-gallery__inner .homepage-gallery__elem--small .desc {
+      font-weight: 400;
+      font-size: 0.875rem;
+      letter-spacing: inherit;
+      font-family: "SanFranciscoDisplay";
+      line-height: normal; }
 
 .homepage-gallery-wrap .homepage-gallery-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .homepage-gallery-wrap .homepage-gallery-item img {
     display: block;
     width: 100%; }
+  .homepage-gallery-wrap .homepage-gallery-item .homepage-gallery-item__description {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    padding: 2.5rem; }
+    .homepage-gallery-wrap .homepage-gallery-item .homepage-gallery-item__description button {
+      opacity: 0; }
+    .homepage-gallery-wrap .homepage-gallery-item .homepage-gallery-item__description:hover {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .homepage-gallery-wrap .homepage-gallery-item .homepage-gallery-item__description:hover .title, .homepage-gallery-wrap .homepage-gallery-item .homepage-gallery-item__description:hover .desc {
+        display: none; }
+      .homepage-gallery-wrap .homepage-gallery-item .homepage-gallery-item__description:hover button {
+        opacity: 1; }
 
 /* Extra large: ≥1200px */
 /* Large: ≥992px */
@@ -144,7 +206,9 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
   .owl-homepage-top-two__container .rows {
     background-color: #fff; }
   .owl-homepage-top-two__container .title {
@@ -478,7 +542,9 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
   .building_and_finishing--wrap h2 {
     margin-bottom: 1.875rem; }
   .building_and_finishing--wrap p {
@@ -488,7 +554,10 @@
     font-family: "SanFranciscoDisplay";
     line-height: normal;
     color: #000;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
 
 .box {
   height: 450px;
