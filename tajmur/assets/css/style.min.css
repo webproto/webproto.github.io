@@ -4940,6 +4940,10 @@ main {
 	overflow: hidden;
 }
 
+.mb-5 {
+	margin-bottom: 3rem;
+}
+
 section.section-main_slider {
 	border: none;
 }
@@ -5158,7 +5162,9 @@ section.section-announcement_section .slide .slider-image {
 }
 
 section.section-announcement_section .text-wrapper {
-	margin: 0 0 1.25rem 0;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.25rem;
 }
 
 section.section-announcement_section .text-wrapper p {
@@ -5167,7 +5173,11 @@ section.section-announcement_section .text-wrapper p {
 	font-family: inherit;
 	letter-spacing: inherit;
 	line-height: normal;
-	color: black;
+	color: black !important;
+}
+
+section.section-announcement_section .text-wrapper:hover p {
+	color: #005BB0 !important;
 }
 
 section.section-announcement_section .title {
@@ -5432,10 +5442,7 @@ footer .arrow-right,
 .section-news_feed .arrow-right,
 .section-residents a,
 .section-residents .arrow-left,
-.section-residents .arrow-right,
-.section-bottom-map a,
-.section-bottom-map .arrow-left,
-.section-bottom-map .arrow-right {
+.section-residents .arrow-right {
 	transition: opacity .2s ease;
 }
 
@@ -5467,13 +5474,7 @@ footer .arrow-right:active,
 .section-residents .arrow-left:hover,
 .section-residents .arrow-left:active,
 .section-residents .arrow-right:hover,
-.section-residents .arrow-right:active,
-.section-bottom-map a:hover,
-.section-bottom-map a:active,
-.section-bottom-map .arrow-left:hover,
-.section-bottom-map .arrow-left:active,
-.section-bottom-map .arrow-right:hover,
-.section-bottom-map .arrow-right:active {
+.section-residents .arrow-right:active {
 	opacity: .6;
 }
 
@@ -5502,6 +5503,10 @@ footer .arrow-right,
 .section-residents a.base-color:hover {
 	opacity: 1;
 	color: #005BB0;
+}
+
+.section-bottom-map a p {
+	transition: all .2s ease;
 }
 
 footer {
@@ -6183,7 +6188,16 @@ footer .list-item a:hover {
 }
 
 .navigation-wrap .ul-navig > li:hover {
-	color: #0485FD;
+	color: #fff;
+	background-color: #005BB0;
+}
+
+.navigation-wrap .ul-navig > li:hover a {
+	color: #fff;
+}
+
+.navigation-wrap .ul-navig > li:hover::before {
+	background-color: #fff;
 }
 
 .navigation-wrap ul {
@@ -6251,7 +6265,7 @@ footer .list-item a:hover {
 	top: -50%;
 	right: calc(100%);
 	background-color: #fff;
-	padding: 1.25rem 0.75rem;
+	padding: 1.25rem 0rem;
 	z-index: 100;
 	transition: all 2s ease;
 	box-shadow: inset -8px 2px 8px rgba(0, 0, 0, 0.13);
@@ -6266,6 +6280,7 @@ footer .list-item a:hover {
 	color: #005BB0;
 	display: inline-flex;
 	margin-bottom: 0.25rem;
+	margin-left: 0.75rem;
 }
 
 .navigation-wrap ul .li-navig-arrow .ul-navig__children ul {
@@ -6275,15 +6290,28 @@ footer .list-item a:hover {
 
 .navigation-wrap ul .li-navig-arrow .ul-navig__children ul li {
 	display: inline-flex;
-	padding: 0.625rem 0px;
+	padding: 0rem 0.75rem;
 	position: relative;
+}
+
+.navigation-wrap ul .li-navig-arrow .ul-navig__children ul li:hover {
+	color: #fff;
+	background-color: #005BB0;
+}
+
+.navigation-wrap ul .li-navig-arrow .ul-navig__children ul li:hover a {
+	color: #fff;
+}
+
+.navigation-wrap ul .li-navig-arrow .ul-navig__children ul li:hover::before {
+	background-color: transparent;
 }
 
 .navigation-wrap ul .li-navig-arrow .ul-navig__children ul li::before {
 	display: inline-block;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0.75rem;
 	content: "";
 	height: 1px;
 	width: 188px;
@@ -6294,7 +6322,7 @@ footer .list-item a:hover {
 	display: inline-block;
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: 0.75rem;
 	content: "";
 	height: 1px;
 	width: 188px;
@@ -6310,8 +6338,8 @@ footer .list-item a:hover {
 	line-height: normal;
 	color: #000;
 	position: relative;
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	width: 100%;
+	padding: 0.625rem 0.9375rem;
 }
 
 .navigation-wrap ul .li-navig-arrow .ul-navig__children ul li a::before {
@@ -7159,8 +7187,12 @@ nav ul li a:hover::after {
 	transition: all .2s ease;
 }
 
-.additional-resource:hover {
+.additional-resource:hover .additional-resource__img {
 	opacity: 0.8;
+}
+
+.additional-resource:hover .additional-resource__text span {
+	color: #005BB0;
 }
 
 .additional-resource .additional-resource__img {
@@ -8578,6 +8610,27 @@ section.section-announcement_section h5 {
 	margin-top: 6px;
 }
 
+.news-feed--wrapper-text .text-wrapper p {
+	color: #000;
+	font-weight: 400;
+	font-size: 1rem;
+	font-family: inherit;
+	letter-spacing: inherit;
+	line-height: normal;
+}
+
+.news-feed--wrapper-text .text-wrapper:hover p {
+	color: #005BB0;
+}
+
+.slick-news-feed--item .slick-news-feed--item__img {
+	width: 288px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
 /* Andrew Fix End */
 /*!==========  Desktop First  ==========*/
 /*! Extra large: ≥1200px */
@@ -8586,7 +8639,6 @@ section.section-announcement_section h5 {
 @media (max-width: 991.98px) {
 	section.section-main_slider,
 	.adds-gallery-block,
-	.section-additional_resources,
 	.section-bottom-map,
 	.section-useful_links,
 	.residents-box {
