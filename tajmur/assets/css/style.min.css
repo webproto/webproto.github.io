@@ -4893,7 +4893,10 @@ h4, .h4 {
 }
 
 h5, .h5 {
-	font: 700 1.125rem/1.75rem "PtSerif";
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 100%;
+	font-family: "PtSerif";
 }
 
 .mb-0 {
@@ -5286,6 +5289,7 @@ section.section-residents a {
 section.section-residents .box {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
+	position: relative;
 }
 
 section.section-residents .box a {
@@ -5300,6 +5304,10 @@ section.section-residents .box:after {
 	left: 0;
 	width: 150px;
 	border: 1px solid #F1F1F1;
+}
+
+section.section-residents .slick-arrow {
+	cursor: pointer;
 }
 
 section.section-residents .line {
@@ -5428,7 +5436,6 @@ footer .arrow-right,
 .section-bottom-map a,
 .section-bottom-map .arrow-left,
 .section-bottom-map .arrow-right {
-	display: block;
 	transition: opacity .2s ease;
 }
 
@@ -5468,6 +5475,24 @@ footer .arrow-right:active,
 .section-bottom-map .arrow-right:hover,
 .section-bottom-map .arrow-right:active {
 	opacity: .6;
+}
+
+footer a,
+footer .arrow-left,
+footer .arrow-right,
+.section-main_slider a,
+.section-main_slider .arrow-left,
+.section-main_slider .arrow-right,
+.section-news_feed a,
+.section-news_feed .arrow-left,
+.section-news_feed .arrow-right,
+.section-residents a,
+.section-residents .arrow-left,
+.section-residents .arrow-right,
+.section-bottom-map a,
+.section-bottom-map .arrow-left,
+.section-bottom-map .arrow-right {
+	display: block;
 }
 
 .section-residents a.base-color {
@@ -8545,6 +8570,14 @@ nav ul li a:hover::after {
 	color: #005BB0;
 }
 
+section.section-announcement_section h5 {
+	margin-bottom: 5px;
+}
+
+.adds-gallery-block .col-lg-6:first-child p {
+	margin-top: 6px;
+}
+
 /* Andrew Fix End */
 /*!==========  Desktop First  ==========*/
 /*! Extra large: ≥1200px */
@@ -8552,8 +8585,6 @@ nav ul li a:hover::after {
 /*! Medium: ≥768px */
 @media (max-width: 991.98px) {
 	section.section-main_slider,
-	.first-face-block,
-	.anoncer-block,
 	.adds-gallery-block,
 	.section-additional_resources,
 	.section-bottom-map,
@@ -8584,9 +8615,6 @@ nav ul li a:hover::after {
 	.anonce-wrapper .text-wrapper {
 		width: 70%;
 		padding-left: 10px;
-	}
-	section.section-news_feed .flex {
-		display: block;
 	}
 	section.section-news_feed .flex .text-wrapper {
 		width: 100%;
