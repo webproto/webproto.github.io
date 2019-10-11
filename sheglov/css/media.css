@@ -1,0 +1,163 @@
+/*
+max-width : 1200px
+max-width : 992px
+max-width : 768px
+max-width : 480px
+max-width : 360px
+*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	.section {
+	padding: 30px 0;
+}
+
+	/*HEADER
+	========*/
+
+	.tel a{
+		font-size: 16px;
+		position: relative;
+		top: 3px;
+	}
+
+	.ion-ios-telephone {
+		font-size: 16px;
+		position: relative;
+		top: px;
+	}
+
+	/*TEAM
+	======*/
+
+	.img-trener {
+		width: 225px;
+		height: 375px;
+	}
+
+	/*CHOICE
+	========*/
+
+	.choice p {
+		font-size: 18px;
+	}
+
+	.price-span {
+		font-size: 20px;
+		top: -3px;
+	}
+
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	p,
+	.p-gym_desc {
+		font-size: 16px;
+	}
+
+	/*HEADER
+	========*/
+
+	.tel {
+		margin-left: 25px;
+	}
+
+	.tel a{
+		font-size: 14px;
+		position: relative;
+		top: 6px;
+	}
+
+	/*SLIDER
+	========*/
+	.carousel-control-next-icon,
+	.carousel-control-prev-icon {
+		height: 20px;
+		width: 20px;
+	}
+
+	.img-trener {
+		width: 150px;
+		height: 250px;
+	}
+
+	#btn-info {
+	display: block;
+}
+
+	.vis-480 {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
+	.team .row {
+		justify-content: center;
+	}
+
+	.hide-480 {
+		margin-top: 20px;
+		display: none;
+	}
+
+	/*CHOICE
+	========*/
+
+	.choice p {
+		font-size: 15px;
+	}
+
+	.price-span {
+		font-size: 17px;
+		top: -3px;
+	}
+
+	.map {
+		/*height: 300px;*/
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 360px) {
+
+	/*HEADER
+	========*/
+
+	.tel {
+		display: none;
+	}
+
+	/*TEAM
+	======*/
+
+	.img-trener {
+		width: 113px;
+		height: 187px;
+	}
+
+}

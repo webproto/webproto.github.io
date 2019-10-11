@@ -1,0 +1,44 @@
+
+.ion {
+	position: relative;
+	left: -13px;
+	font-size: 20px;
+}
+
+.ion-ios-telephone {
+	/*color: #fff !important;*/
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+.ion-location {
+	font-size: 20px;
+}
+
+.ion-gym {
+	margin-right: 5px;
+}
+
+.ion-foot {
+	margin-right: 15px;
+}
+
+.ic-foot-soc {
+	border: 0px;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.ic-foot-soc:hover {
+	background: #fff;
+	color: #FF0000;
+	/*opacity: .8;*/
+}
+
+.icon-vk {
+	padding-right: 13px;
+}
+
+.icon-instagram {
+	
+}

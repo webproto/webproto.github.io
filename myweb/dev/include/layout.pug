@@ -1,0 +1,18 @@
+doctype html
+html(lang="ru-RU")
+	head
+		include head.pug
+		title 
+			block title
+	body
+		.wrapper
+			header
+				block header
+					include header.pug
+			main
+				block content
+			footer 
+				block footer
+					include ../include/footer.pug
+		//- include ../include/modal.pug
+		include ../include/scripts.pug

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons-->
+    <link href="libs/ionicons.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- My Styles-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <title> About
+    </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="home">
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-dark navbar-expand-lg w-100"><a class="navbar-brand" href="#"><img class="logo" src="img/logo.svg"></a>
+              <div class="grow-1"></div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="ion-drag"></span></button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav"><a class="nav-item nav-link" href="index.html">Главная</a><a class="nav-item nav-link" href="index.html#gym">Наши залы</a><a class="nav-item nav-link" href="index.html#price">Цена</a><a class="nav-item nav-link" href="gallery.html">Галерея</a><a class="nav-item nav-link" href="about.html">О нас</a></div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section about">
+          <div class="container">
+            <div class="row">
+              <h1 class="h1-gyms w-100">О Нас</h1>
+              <div class="w-100"></div>
+              <div class="about-image-wrap d-flex">
+                <div class="col-12 col-md-4">
+                  <div class="gallery-item"><img class="img-fluid img-gallery" src="img/gallery/1.jpg"></div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="gallery-item"><img class="img-fluid img-gallery" src="img/gallery/2.jpg"></div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="gallery-item"><img class="img-fluid img-gallery" src="img/gallery/3.jpg"></div>
+                </div>
+              </div>
+              <div class="about-description w-100">
+                <h2 class="h1-gyms w-100">Об Артеме:</h2>
+                <div class="w-100"></div>
+                <p class="p-about-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, corrupti, fugit. Temporibus nostrum nam deleniti vitae accusantium iste sunt facilis, quisquam eveniet reiciendis corporis, veniam nulla. Provident tempora perspiciatis quod commodi iure, neque eaque quos, consequuntur expedita dolorem dicta dignissimos nam hic eos modi quia voluptatem doloremque necessitatibus, ipsam voluptate.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer> 
+        <div class="container">
+          <div class="row"><a id="btn-home" href="#home">На верх</a>
+            <div class="foot-wrap w-100">
+              <div class="foot-tel-wrap">
+                <div class="foot-tel"><a href="tel:+79671407700"><i class="ion-ios-telephone"></i>+7 967 140 77 00</a>
+                  <div class="social"><a class="soc" href="https://vk.com/shcheglovteam"><i class="ic-foot-soc icon-vk"></i></a><a class="soc" href="https://www.instagram.com/artemshcheglov/"><i class="ic-foot-soc icon-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="foot-adr">ТАк же Вы можете записаться на первую тренировку БЕСПЛАТНО!
+                <div class="modal-btn"><a id="btn-modal_open" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form class="send-form" action="formdata.php" method="POST" name="form1">
+              <div class="minput-wrapper">
+                <div class="minput">
+                  <input class="name" id="modalFIO" type="text" required="required" name="FIO">
+                  <label for="modalFIO">Имя*</label>
+                </div>
+              </div>
+              <div class="minput-wrapper">
+                <div class="minput">
+                  <input class="phone" id="modalPhone" type="tel" required="required" name="phone">
+                  <label for="modalPhone">Телефон*</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-form-send">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
